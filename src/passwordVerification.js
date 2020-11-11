@@ -10,6 +10,9 @@ class PasswordVerification {
     if (this.password.length <= 8) {
       throw new Error('Password should be larger than 8 characters');
     }
+    if (this.password.search(/[A-Z]/g) < 0) {
+      throw new Error('Password should have one uppercase letter at least');
+    }
     return true;
   }
 }

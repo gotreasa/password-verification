@@ -16,5 +16,5 @@ TODO:
 ✅ - Refactor the wording for the character length greater than 8 characters  
 ✅ - Test that the password should not be null  
 ✅ - Implement the check that the password should not be null  
-🚧 - Test that the password should have one uppercase letter at least  
-- Implement the check that the password should have one uppercase letter at least  
+✅ - Test that the password should have one uppercase letter at least  
+✅ - Implement the check that the password should have one uppercase letter at least  

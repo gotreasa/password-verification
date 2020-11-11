@@ -13,4 +13,8 @@ describe('Verification rules', () => {
     const passwordVerification = new PasswordVerification();
     expect(() => { passwordVerification.verify(); }).toThrow('Password should not be null');
   });
+  test('should fail if no uppercase character', () => {
+    const passwordVerification = new PasswordVerification('táb4achtach');
+    expect(() => { passwordVerification.verify(); }).toThrow('Password should have one uppercase letter at least');
+  });
 });
