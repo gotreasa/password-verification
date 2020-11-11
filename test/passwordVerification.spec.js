@@ -17,4 +17,8 @@ describe('Verification rules', () => {
     const passwordVerification = new PasswordVerification('táb4achtach');
     expect(() => { passwordVerification.verify(); }).toThrow('Password should have one uppercase letter at least');
   });
+  test('should fail if no lowercase character', () => {
+    const passwordVerification = new PasswordVerification('TáB4ACHTACH');
+    expect(() => { passwordVerification.verify(); }).toThrow('Password should have one lowercase letter at least');
+  });
 });

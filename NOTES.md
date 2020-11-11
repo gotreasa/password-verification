@@ -18,3 +18,5 @@ TODO:
 ✅ - Implement the check that the password should not be null  
 ✅ - Test that the password should have one uppercase letter at least  
 ✅ - Implement the check that the password should have one uppercase letter at least  
+✅ - Test that the password should have one lowercase letter at least
+✅ - Implement the check that the password should have one lowercase letter at least    

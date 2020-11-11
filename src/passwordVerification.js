@@ -13,6 +13,9 @@ class PasswordVerification {
     if (this.password.search(/[A-Z]/g) < 0) {
       throw new Error('Password should have one uppercase letter at least');
     }
+    if (this.password.search(/[a-z]/g) < 0) {
+      throw new Error('Password should have one lowercase letter at least');
+    }
     return true;
   }
 }
