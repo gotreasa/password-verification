@@ -4,6 +4,9 @@ class PasswordVerification {
   }
 
   verify() {
+    if (!this.password) {
+      throw new Error('Password should not be null');
+    }
     if (this.password.length <= 8) {
       throw new Error('Password should be larger than 8 characters');
     }

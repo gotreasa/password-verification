@@ -9,4 +9,8 @@ describe('Verification rules', () => {
     const passwordVerification = new PasswordVerification('Abs0lute');
     expect(() => { passwordVerification.verify(); }).toThrow('Password should be larger than 8 characters');
   });
+  test('should fail if password is null', () => {
+    const passwordVerification = new PasswordVerification();
+    expect(() => { passwordVerification.verify(); }).toThrow('Password should not be null');
+  });
 });
