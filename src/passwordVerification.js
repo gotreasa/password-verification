@@ -16,6 +16,9 @@ class PasswordVerification {
     if (this.password.search(/[a-z]/g) < 0) {
       throw new Error('Password should have one lowercase letter at least');
     }
+    if (this.password.search(/[0-9]/g) < 0) {
+      throw new Error('Password should have one number at least');
+    }
     return true;
   }
 }
